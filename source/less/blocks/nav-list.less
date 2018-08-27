@@ -2,4 +2,20 @@
   .list();
 
   display: flex;
+  justify-content: space-between;
+  width: 415px;
+}
+
+.nav-list__item {
+  a {
+    color: @grey;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  &--active {
+    a {
+      color: @black;
+    }
+  }
 }
