@@ -37,17 +37,33 @@
         </aside>
         <section class="video">
           <div class="video__player">
-            <img class="video__img" src="#" alt="видео-плеер" width="615" height="436">
-            <span class="video__play play-button"></span>
-          </div>
-          <div class="video__previews">
-            <div class="video__preview video__preview--1">
-              <img class="video__preview-img" src="#" alt="превьюшка-1" width="280" height="155">
+            <div class="video__frame video__frame--big">
+              <picture>
+                <source type="image/webp" srcset="img/main-video.webp">
+                <img class="video__img" src="img/main-video.jpg" alt="видео-плеер">
+              </picture>
               <span class="video__play play-button"></span>
             </div>
+          </div>
+          <div class="video__previews">
+            <h2 class="video__title">User Videos</h2>
+            <div class="video__preview video__preview--1">
+              <div class="video__frame video__frame--little">
+                <picture>
+                  <source type="image/webp" srcset="img/user-video-1.webp">
+                  <img class="video__preview-img" src="img/user-video-1.jpg" alt="превьюшка-1">
+                </picture>
+                <span class="video__play play-button"></span>
+              </div>
+            </div>
             <div class="video__preview video__preview--2">
-              <img class="video__preview-img" src="#" alt="превьюшка-2" width="280" height="155">
-              <span class="video__play play-button"></span>
+              <div class="video__frame video__frame--little">
+                <picture>
+                  <source type="image/webp" srcset="img/user-video-2.webp">
+                  <img class="video__preview-img" src="img/user-video-2.jpg" alt="превьюшка-2">
+                </picture>
+                <span class="video__play play-button"></span>
+              </div>
             </div>
           </div>
         </section>

@@ -1,3 +1,32 @@
 .video {
+  display: flex;
+  justify-content: space-between;
   width: 66%;
+}
+
+.video__preview {
+  &--1 {
+    margin-bottom: 36px;
+  }
+}
+
+.video__frame {
+  position: relative;
+  overflow: hidden;
+
+  &--big {
+    width: 619px;
+    height: 436px;
+  }
+
+  &--little {
+    width: 280px;
+    height: 155px;
+  }
+}
+
+.video__img {
+  position: absolute;
+  left: -220px;
+  top: -170px;
 }
