@@ -1,7 +1,49 @@
 .reviews {
-  width: 271px;
+  width: 265px;
 }
 
+.reviews__title {
+  font-size: @big-size;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+.reviews__block {
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: 1px solid @grey;
+
+  &--1 {
+    margin-bottom: 45px;
+
+    &:before {
+      content: "";
+      width: 36px;
+      height: 29px;
+      background-image: url("../img/quot-marks.png");
+      background-repeat: no-repeat;
+    }
+  }
+
+  &--2 {
+    &:before {
+      content: "";
+      width: 36px;
+      height: 29px;
+      background-image: url("../img/quot-marks.png");
+      background-repeat: no-repeat;
+    }
+  }
+}
 .reviews__text {
+  font-style: italic;
+  line-height: 30px;
   color: @grey;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.reviews__author {
+  font-weight: bold;
+  margin: 0;
 }

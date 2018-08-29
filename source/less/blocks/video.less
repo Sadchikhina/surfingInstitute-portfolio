@@ -4,6 +4,12 @@
   width: 1028px;
 }
 
+.video__title {
+  font-size: @big-size;
+  font-weight: normal;
+  margin-bottom: 26px;
+}
+
 .video__preview {
   &--1 {
     margin-bottom: 36px;
@@ -15,8 +21,9 @@
   overflow: hidden;
 
   &--big {
-    width: 619px;
+    width: 617px;
     height: 436px;
+    margin-top: 14px;
   }
 
   &--little {
@@ -27,6 +34,19 @@
 
 .video__img {
   position: absolute;
-  left: -220px;
+  left: -234px;
   top: -170px;
+}
+
+.video__preview-img {
+  position: absolute;
+
+  &--1 {
+    top: -35px;
+  }
+
+  &--2 {
+    left: -3px;
+    top: -17px;
+  }
 }

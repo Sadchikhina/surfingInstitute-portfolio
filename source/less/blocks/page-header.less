@@ -3,6 +3,34 @@
   justify-content: space-between;
   width: 1437px;
   margin: 0 auto;
-  padding-top: 90px;
-  margin-bottom: 150px;
+  padding-top: 100px;
+  padding-left: 18px;
+  margin-bottom: 194px;
+}
+
+.page-header__logo {
+  position: relative;
+  font-size: 15px;
+  font-weight: bold;
+
+  &:before {
+    position: absolute;
+    bottom: 5px;
+    right: -4px;
+    content: "";
+    width: 35px;
+    height: 35px;
+    border: 1px solid @grey;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: 11px;
+    right: -5px;
+    content: "";
+    width: 23px;
+    height: 23px;
+    border: 2px solid @black;
+    transform: rotate(45deg);
+  }
 }
