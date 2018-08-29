@@ -12,29 +12,21 @@
   position: relative;
   padding-bottom: 15px;
   border-bottom: 1px solid @grey;
+  margin-bottom: 45px;
 
-  &--1 {
-    margin-bottom: 45px;
-
-    &:before {
-      content: "";
-      width: 36px;
-      height: 29px;
-      background-image: url("../img/quot-marks.png");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--2 {
-    &:before {
-      content: "";
-      width: 36px;
-      height: 29px;
-      background-image: url("../img/quot-marks.png");
-      background-repeat: no-repeat;
-    }
+  &:before {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    content: "";
+    width: 36px;
+    height: 29px;
+    background-image: url("../img/quot-marks.png");
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 }
+
 .reviews__text {
   font-style: italic;
   line-height: 30px;
