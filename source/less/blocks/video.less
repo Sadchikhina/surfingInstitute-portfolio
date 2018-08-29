@@ -11,7 +11,14 @@
   margin-bottom: 26px;
 }
 
+.video__player {
+  position: relative;
+  z-index: -1;
+}
+
 .video__preview {
+  position: relative;
+
   &--1 {
     margin-bottom: 36px;
   }
@@ -20,6 +27,7 @@
 .video__frame {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 
   &--big {
     width: 617px;
@@ -37,6 +45,7 @@
   position: absolute;
   left: -234px;
   top: -170px;
+  z-index: -1;
 }
 
 .video__preview-img {
@@ -49,5 +58,19 @@
   &--2 {
     left: -3px;
     top: -17px;
+  }
+}
+
+.video__play {
+  &--big {
+    bottom: 32px;
+    left: 24px;
+  }
+
+  &--1,
+  &--2 {
+    bottom: -15px;
+    left: -10px;
+    background-position: 50% 45%;
   }
 }
